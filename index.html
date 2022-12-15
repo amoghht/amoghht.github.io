@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal Portfolio Website - Amogh HT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6824af51fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="header">
+
+    <div class="container">
+        <nav>
+            <img src="images/amogh-logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">My work</a></li>
+                <li><a href="#portfolio">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fa-sharp fa-solid fa-bars"onclick="openmenu()"></i>
+
+        </nav>
+        
+       
+        <div class="header-text">
+            <p> Edge AI Developer</p>
+            <h1>Hi,I'm <span>Amogh</span> </h1>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- -----------------------about-------------------  -->
+
+<div id="about">
+
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/amogh-original.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me </h1>
+                
+                <p>
+
+                    about me text comes hea
+
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                    <p class="tab-links" onclick="opentab('education')" > Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+
+                    <ul>
+                        <li><span> jetson nano </span><br> cv on nvidia series</li>
+                        <li><span> raspberry pi  </span><br> cv on raspberry pi </li>
+                        <li><span> intel openvino  </span><br> cv on intel cpus</li>
+                    </ul>
+
+                </div>
+
+                <div class="tab-contents" id="experience">
+
+                    <ul>
+                        <li><span> current </span><br> Edge AI developer at sandlogic </li>
+                        <li><span> 2021-2022 mar </span><br> Edge AI intern at <a href="#"> SandLogic Technologies</a> </li>
+                        
+                    </ul>
+                    
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                    
+                    <ul>
+                        <li><span> 2022 </span><br> Be</li>
+                        <li><span> 2017  </span><br> pu</li>
+                        <li><span> 2015  </span><br> 10th</li>
+                    </ul>
+                    
+                    </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<a href="images/my-cv.pdf" download class="btn btn-2"> Download Resume</a>
+
+<!-- -----------------------services-------------------  -->
+
+<div class="services" id="services">
+    <div class="container">
+        <h1 class="sub-title">my work</h1>
+
+        <div class="services-list">
+            <div>
+                <img src="images/orin-nano-2.jpg" width="240" height="250">
+                <h2> Edge AI on jetson </h2>
+                <p> description on jetson</p>
+                <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <img src="images/intel-nuc.jpg" width="240" height="250">
+                <h2> Edge AI on intel </h2>
+                <p> description on intel</p>
+                
+
+                <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <img src="images/rpi.jpg" width="240" height="250">
+                <h2> Edge AI on rpi </h2>
+                <p> description on rpi</p>
+                <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <img src="images/arduino.jpg" width="240" height="250">
+                <h2> Edge AI on ble </h2>
+                <p> description on arduino </p>
+                <a href="#"> Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- -----------------------portfolio -------------------  -->
+
+<div id="portfolio">
+
+    <div class="container">
+
+        <h1 class="sub-title">Projects</h1>
+
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3> project 1</h3>
+                    <p>description of project 1</p>
+                    <a href="#">Project github link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3> project 2</h3>
+                    <p>description of project 2</p>
+                    <a href="#">Project github link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+
+                <div class="layer">
+                    <h3> project 3</h3>
+                    <p>description of project 3</p>
+                    <a href="#">Project github link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- -----------------------uncomment below line in future -------------------  -->
+        <!--<a href="#" class="btn">See more </a> -->
+
+        <a href="images/my-cv.pdf" download class="btn btn-2"> Download Resume</a>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- -----------------------contact -------------------  -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>amogh.ht@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91-7019827317</p>
+                <p><i class="fa-brands fa-linkedin"></i>www.linkedin.com/in/amoghht</p>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i> </a>
+                </div>
+
+                
+
+
+
+            </div>
+
+            <div class="contact-right">
+                    <img src="images/qr-code.png" width="400" height="400">
+                    <h1> Scan to connect on LinkedIn  </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="copyright">
+        <p> Copyright section is pending <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+
+            tablink.classList.remove("active-link")
+        }
+        
+        for(tabcontent of tabcontents){
+
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link");
+
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+
+
+</script>
+
+
+<script>
+
+
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+
+</script>
+
+</body>
+
+
+</html>
+
+
